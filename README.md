@@ -33,3 +33,32 @@ Ce projet vise à mettre en pratique :
 - Collections (ArrayList)
 - Interfaces et classes anonymes
 - Méthodes redéfinies (`equals`, `toString`, `compareTo`)
+
+---
+
+📁 **Gestion des Départements - Java (Prosit 10)**
+
+Ce module complète la gestion des employés en introduisant une structure pour gérer des départements à l’aide d’une interface générique et d’une implémentation basée sur `HashSet`.
+
+🔧 **Fonctionnalités principales :**
+
+- ➕ Ajouter un département  
+- 🔍 Rechercher un département par nom ou par objet  
+- ❌ Supprimer un département  
+- 📃 Afficher la liste des départements  
+- 🔢 Trier les départements par ID (`TreeSet` avec `Comparator`)
+
+📦 **Structure du projet :**
+
+- `Departement` : Classe représentant un département (id, nom, nombre d’employés), avec redéfinition de `equals()` et `toString()`
+- `IDepartement<T>` : Interface générique définissant les opérations CRUD et de tri
+- `DepartementHashSet` : Implémentation concrète basée sur `HashSet` et `TreeSet`
+
+🚀 **Objectif pédagogique :**
+
+Ce module vise à renforcer :
+- La maîtrise des collections (`HashSet`, `TreeSet`)
+- La gestion de types génériques
+- L’implémentation d’interfaces
+- Le tri via `Comparator` personnalisé
+

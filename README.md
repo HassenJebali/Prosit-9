@@ -62,3 +62,37 @@ Ce module vise à renforcer :
 - L’implémentation d’interfaces
 - Le tri via `Comparator` personnalisé
 
+  ---
+  
+  **📁 Gestion des Affectations Employés - Java (Prosit 11)**
+
+Ce module complète la gestion des employés et départements en introduisant la gestion des affectations des employés aux départements à l’aide d’une collection dynamique. L’objectif est de permettre un tri des employés par identifiant, en utilisant une TreeMap pour organiser et afficher les affectations de manière triée, tout en offrant des fonctionnalités d’ajout, de suppression et de recherche des affectations.
+
+**🔧 Fonctionnalités principales :**
+
+➕ Ajouter un employé à un département
+
+🔍 Rechercher les affectations d’un employé ou d’un département
+
+❌ Supprimer une affectation d’un employé
+
+📃 Afficher les affectations des employés aux départements
+
+🔢 Trier les affectations par identifiant d’employé (`TreeMap`)
+
+📦 Structure du projet :
+
+`AffectationHashMap` : Classe permettant de gérer l'affectation des employés à des départements via une collection dynamique (`HashMap`), avec la possibilité de trier les affectations par identifiant grâce à l’utilisation de TreeMap.
+
+`TreeMap<Employe, Departement>` : Utilisation de TreeMap pour trier les employés par identifiant dans le cadre des affectations.
+
+**🚀 Objectif pédagogique :**
+
+Ce module vise à approfondir :
+
+La gestion des relations entre objets dans une application Java, notamment entre les employés et les départements
+
+L’utilisation des collections (`HashMap`, `TreeMap`) pour organiser et trier les données
+
+L'implémentation des méthodes CRUD dans un contexte d’affectation d’employés
+

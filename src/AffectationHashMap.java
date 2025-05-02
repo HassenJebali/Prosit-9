@@ -4,16 +4,16 @@ import java.util.TreeMap;
 
 public class AffectationHashMap {
 
-    private Map <Employe,Departement> affectations;
+    private Map <Departement,Employe> affectations;
 
     public AffectationHashMap() {
         this.affectations = new HashMap<>();}
 
     public void ajouterEmployeDepartement(Employe e, Departement d) {
-        affectations.put(e,d);}
+        affectations.put(d,e);}
 
     public void afficherEmployesDepartements(){
-        for (Map.Entry<Employe,Departement> e : affectations.entrySet()){
+        for (Map.Entry<Departement,Employe> e : affectations.entrySet()){
             System.out.println(e.getKey() + " " + e.getValue());
         }
     }
@@ -28,11 +28,11 @@ public class AffectationHashMap {
     }
 
     public void afficherEmployes(){
-        for(Employe e : affectations.keySet()){
+        for(Employe e : affectations.values()){
             System.out.println(e);}}
 
     public void afficherDepartements(){
-        for(Departement d : affectations.values()){
+        for(Departement d : affectations.keySet()){
             System.out.println(d);}}
 
     public boolean rechercherEmploye(Employe e) {
@@ -41,7 +41,7 @@ public class AffectationHashMap {
     public boolean rechercherDepartement(Departement d) {
         return affectations.containsValue(d);}
 
-    public Map<Employe, Departement> trierMap(){
+    public Map<Departement,Employe> trierMap(){
         return new TreeMap<>(affectations);
     }
 }
